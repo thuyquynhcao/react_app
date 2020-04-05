@@ -7,7 +7,7 @@ import TaskList from './Components/TaskList';
 class App extends Component {
 
         constructor(props){
-            super(props);
+            super(props); 
             this.state={
                 tasks: [],
                 isDisplayForm : false,
@@ -188,7 +188,7 @@ class App extends Component {
             return (
                 <div className="container">
                     <div className="text-center">
-                        <h1>Quản Lý Công Việc</h1><hr/>
+                        <h1>ジョブ管理</h1><hr/>
                     </div>
                     <div className="row">
                         <div className= { isDisplayForm ? 'col-xs-4 col-sm-4 col-md-4 col-lg-4' : '' } >
@@ -202,7 +202,7 @@ class App extends Component {
                                 className="btn btn-primary" 
                                 onClick = {this.onToggleForm }
                             >
-                                <span className="fa fa-plus mr-5" ></span>Thêm Công Việc
+                                <span className="fa fa-plus mr-5" ></span>ジョブ追加
                             </button>
                             &nbsp;
 
