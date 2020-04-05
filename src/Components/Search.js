@@ -40,7 +40,7 @@ class Search extends Component {
                                         className="btn btn-primary"
                                         onClick = { this.onSearch }
                                     >
-                                        <span className="fa fa-search mr-5"></span>Tìm
+                                        <span className="fa fa-search mr-5"></span>探索
                                     </button>
                                 </span>
                             </div>

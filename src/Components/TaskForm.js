@@ -69,7 +69,7 @@ class TaskForm extends Component {
                 <div className="panel panel-warning">
                                 <div className="panel-heading">
                                     <h3 className="panel-title">
-                                        { id === ' ' ? 'Thêm Công Việc' : 'Cập Nhật Công Việc' }
+                                        { id === ' ' ? '追加' : '更新' }
                                         <span className="fa fa-times-circle text-right" onClick = { this.onCloseForm2 }
                                         ></span>
                                     </h3>
@@ -86,22 +86,22 @@ class TaskForm extends Component {
                                                 onChange = { this.onChange }
                                             />
                                         </div>
-                                        <label>Trạng Thái: </label>
+                                        <label>締め切り </label>
                                         <select 
                                             className="form-control" 
                                             name="status"
                                              value = { this.state.status }
                                             onChange = { this.onChange }
                                         >
-                                            <option value={true}>Kích Hoạt</option>
-                                            <option value={false}> Ân </option>
+                                            <option value={true}> まだ </option>
+                                            <option value={false}> 満期 </option>
                                         </select><br/>
                                         <div className="text-center">
                                             <button type="submit" className="btn btn-warning">
-                                                <span className="fa fa-plus mr-5" ></span> Lưu Lại
+                                                <span className="fa fa-plus mr-5" ></span> 保存
                                             </button>&nbsp;
                                             <button type="button" className="btn btn-danger" onClick = {this.onClear} >
-                                                <span className="fa fa-close mr-5" ></span> Hủy Bỏ
+                                                <span className="fa fa-close mr-5" ></span> キャンセル
                                             </button>
                                         </div>
                                     </form>

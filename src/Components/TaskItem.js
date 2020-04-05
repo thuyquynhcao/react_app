@@ -23,7 +23,7 @@ class TaskItem extends Component {
                                                                 <span 
                                                                             className={ task.status === true ? 'label label-danger' : 'label label-success' } 
                                                                             onClick = { this.onUpsdateStatus }
-                                                                > { task.status === true ? 'Kich Hoat ' : 'An'} </span>
+                                                                > { task.status === true ? 'まだ ' : '満期'} </span>
                                                 </td>
                                                 <td className="text-center" >
                                                                 <button 
@@ -31,14 +31,14 @@ class TaskItem extends Component {
                                                                             className="btn btn-warning"
                                                                             onClick = { this.onUpdate }
                                                                 >
-                                                                            <span className="fa fa-pencil mr-5"></span>Sửa
+                                                                            <span className="fa fa-pencil mr-5"></span>整理
                                                                 </button>
                                                                 &nbsp;
                                                                 <button 
                                                                             type="button"
                                                                             className="btn btn-danger" 
                                                                             onClick = { this.onDelete } >
-                                                                            <span className="fa fa-trash mr-5"></span>Xóa
+                                                                            <span className="fa fa-trash mr-5"></span>削除
                                                                 </button>
                                                 </td>
                                     </tr>
